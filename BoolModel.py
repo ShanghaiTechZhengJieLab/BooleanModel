@@ -1,3 +1,4 @@
+max_loop=10
 count_symbol=['&','!','(',')','-','|']
 symbol={}
 symbol_name=[]
@@ -64,7 +65,7 @@ print(symbol_name)
 
 loop_dic={}
 
-for _ in range(10):
+for _ in range(max_loop):
     old_string=''
     for key in symbol.keys():
         tmp_string=symbol[key]['rule']
